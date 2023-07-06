@@ -57,7 +57,7 @@ namespace SendDanmaku
         private void hackGUI()
         {
             MainWindow mw = (MainWindow)Application.Current.MainWindow;
-            ItemsControl log = (ItemsControl)mw.FindName("Log");
+            ScrollViewer log = (ScrollViewer)mw.FindName("LogScroll");
             TabItem tab = (TabItem)log.Parent;
 
             Grid grid = new Grid();
